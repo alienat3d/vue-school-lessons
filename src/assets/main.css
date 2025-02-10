@@ -92,6 +92,10 @@ li input {
 	justify-content: space-between;
 }
 
+.add-item-form {
+	position: relative;
+}
+
 .add-item-form input {
 	width: 70%;
 	border-radius: 3px;
