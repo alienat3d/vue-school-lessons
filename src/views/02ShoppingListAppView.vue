@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// REFS
+//==| REFS |==//
 const header = ref('Shopping List App')
 const editing = ref(true)
 const inputDisabled = ref(true)
@@ -13,11 +13,11 @@ const items = ref([
 const newItem = ref('')
 const newItemHighPriority = ref(false)
 
-// COMPUTED-FIELDS
+//==| COMPUTED-FIELDS |==//
 const characterCount = computed(() => newItem.value.length)
 const reversedItems = computed(() => [...items.value].reverse())
 
-// METHODS
+//==| METHODS |==//
 const saveItem = () => {
   items.value.push({
     id: items.value.length + 1,
